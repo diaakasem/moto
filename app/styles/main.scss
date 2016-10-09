@@ -82,8 +82,10 @@ body {
   .header {
     margin-bottom: 30px;
   }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
+  .topic {
+    padding: 20px;
+    border: 1px solid gray;
+    margin: 5px;
+    cursor: pointer;
   }
 }

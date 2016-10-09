@@ -1,1 +1,15 @@
-<p>This is the login view.</p>
+<div class="alert alert-success" role="alert" ng-if="login.done">
+  Login succeeded. You will soon be redirected to dashboard.
+</div>
+
+<form name="loginForm" ng-submit="login.onSubmit()">
+  <div class="form-group">
+    <label for="email">Email address</label>
+    <input type="email" class="form-control" id="email" placeholder="Email" ng-model="login.model.email">
+  </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input type="password" class="form-control" id="password" placeholder="Password" ng-model="login.model.password">
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>

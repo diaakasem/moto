@@ -1,1 +1,15 @@
-<p>This is the register view.</p>
+<div class="alert alert-success" role="alert" ng-if="register.done">
+  Thank you for registering with us. You will soon be redirected to login.
+</div>
+
+<form name="registerForm" ng-submit="register.onSubmit()">
+  <div class="form-group">
+    <label for="email">Email address</label>
+    <input type="email" class="form-control" id="email" placeholder="Email" ng-model="register.model.email">
+  </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input type="password" class="form-control" id="password" placeholder="Password" ng-model="register.model.password">
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
