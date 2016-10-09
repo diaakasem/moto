@@ -30,6 +30,31 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
+      .when('/dashboard', {
+        templateUrl: 'views/dashboard.html',
+        controller: 'DashboardCtrl',
+        controllerAs: 'dashboard'
+      })
+      .when('/register', {
+        templateUrl: 'views/register.html',
+        controller: 'RegisterCtrl',
+        controllerAs: 'register'
+      })
+      .when('/login', {
+        templateUrl: 'views/login.html',
+        controller: 'LoginCtrl',
+        controllerAs: 'login'
+      })
+      .when('/user', {
+        templateUrl: 'views/user.html',
+        controller: 'UserCtrl',
+        controllerAs: 'user'
+      })
+      .when('/topic/:id', {
+        templateUrl: 'views/topic.html',
+        controller: 'TopicCtrl',
+        controllerAs: 'topic'
+      })
       .otherwise({
         redirectTo: '/'
       });
